@@ -7,6 +7,8 @@ public class NumberSquareAverage {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1,10,20,30,15);
 
+        // square greater than 100
+
         double ans = list.stream()
                 .map(e -> e * e)
                 .filter(e -> e > 100)
